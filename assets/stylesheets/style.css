@@ -39,8 +39,8 @@
 }
 
 .c-navIcon {
-  width: 16px;
-  height: 17px;}
+  width: 20px;
+}
 
 .c-innerText {
   color: #fff;
@@ -61,6 +61,48 @@
   padding-right: 20px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.p-topContents__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-navArrow {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+  transform: rotate(45deg); /* 斜めに傾けて「∨」にする */
+  transition: transform 0.3s ease; /* なめらかに動かす */
+  margin-bottom: 4px; /* 位置の微調整 */
+}
+
+.p-navList__item.active .c-navArrow {
+  transform: rotate(-135deg);
+  margin-top: 4px;
+  margin-bottom:0;
+}
+
+.p-dropdownList {
+  /* 初期状態は高さを0にして非表示 */
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  padding-left: 15px; /* 子メニューとわかるように少し下げる */
+}
+
+.p-navList__item.active .p-dropdownList {
+  height: auto;
+  opacity: 1;
+  margin-top: 10px;
 }
 
 .l-footer {
