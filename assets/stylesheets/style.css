@@ -15,7 +15,7 @@
   justify-content: flex-end;
 }
 
-.c-navText {
+.c-subText {
   font-size: 12px;
   padding: 30px 30px 0 0;
 }
@@ -41,9 +41,10 @@
   height: 20px;
 }
 
-.c-innerText {
+.c-navText {
   font-size: 14px;
   padding-left: 10px;
+  font-weight: bold;
 }
 
 .p-topContents__bottom {
