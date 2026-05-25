@@ -50,6 +50,18 @@
   </header>
   <main class="l-main">
     <img class="c-mainImage">
+    <section class="p-campaign">
+      <div class="p-campaignContents">
+        <div class="p-campaignContents__top">
+          <div class="c-decoration"></div>
+          <h1 class="c-mainTitle">CAMPAIGN</h1>
+          <h2 class="c-mainHeading">開催中のキャンペーン</h2>
+        </div>
+        <div class="p-campaignContents__bottom">
+          <img class="c-campaignImage">
+        </div>
+      </div>
+    </section>
     <section class="p-about">
       <div class="p-aboutContents">
         <div class="c-decoration"></div>
@@ -167,19 +179,202 @@
           <h2 class="c-mainHeading">よくある質問</h2>
         </div>
         <div class="p-questionContents__bottom">
-          <ul class="p-questionList">
-            <li class="p-questionList__top">
-              <p class="c-questionHeading">Q.</p>
-              <p class="c-questionText">初めてでも大丈夫ですか？</p>
-            </li>
-            <li class="p-questionList__bottom">
-              <p class="c-questionHeading">A.</p>
-              <p class="c-questionText">スタッフが丁寧にご説明しますのでご安心ください。</p>
-            </li>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">効果・回数について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 脱毛は何回くらいで効果が出ますか？</summary>
+                <p class="c-questionText">A.効果の感じ方には個人差・部位差があります。目安として、数回で毛が薄くなったと感じる方が増え、10回前後で自己処理がかなり楽になったと感じる方が多いです。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 通う頻度はどれくらいですか？</summary>
+                <p class="c-questionText">A.毛の生え変わりに合わせて通うのが基本で、目安は約2か月おきです（部位・毛質・肌状態で調整します）。</p>
+              </details>
+            </div>
+          </details>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">痛みや肌への刺激について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 痛みはありますか？</summary>
+                <p class="c-questionText">A.感じ方には個人差がありますが、一般的には「輪ゴムで軽くはじかれたような刺激」と表現されることが多いです。毛が濃い部位は刺激を感じやすい傾向があります。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 敏感肌でも施術できますか？</summary>
+                <p class="c-questionText">A.はい。肌状態を確認しながら出力を調整し、無理のない範囲で進めます。赤み・かゆみなどが出やすい方は、カウンセリングで肌の状態や普段のスキンケアを伺い、施術の可否や注意点をご案内します。</p>
+              </details>
+            </div>
+          </details>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">事前準備について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q.施術前の自己処理は必要ですか？</summary>
+                <p class="c-questionText">A.はい。安全に照射するため、ご来店前日までの自己処理をお願いしております。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q.カミソリでも大丈夫？おすすめは？</summary>
+                <p class="c-questionText">A.肌負担を減らすため、電気シェーバーでの自己処理をお願いしております</p>
+              </details>
+            </div>
+          </details>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">日焼けや体調について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q.日焼けしていても施術できますか？</summary>
+                <p class="c-questionText">A.日焼け直後は肌への負担が大きくなる可能性があるため、肌状態によっては施術を見合わせる場合があります。目安として2週間程度あけてからのご予約をご案内しております。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q.生理中でも施術できますか？</summary>
+                <p class="c-questionText">A.VIOを避けての施術、もしくは別日への変更をご案内いたします。体調や肌の敏感さが増す場合があるため、無理せずご相談ください。</p>
+              </details>
+            </div>
+          </details>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">施術後について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 施術当日に気をつけることは？</summary>
+                <p class="c-questionText">A.施術直後は肌が敏感になりやすいので、入浴（湯船）・激しい運動・飲酒・マッサージなど、体温や血行が上がる行動はお控えください。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 保湿は必要ですか？</summary>
+                <p class="c-questionText">A.はい。脱毛後は乾燥しやすいため、保湿をお願いしております。</p>
+              </details>
+            </div>
+          </details>
+          <details class="p-questionCat" name="faqCat">
+            <summary class="c-mainSummary">その他について</summary>
+            <div class="p-questionList">
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 都度払いはできますか？</summary>
+                <p class="c-questionText">A.はい。都度払い／コースのどちらもご用意しております。</p>
+              </details>
+              <details class="p-questionList__item">
+                <summary class="c-quetionHeading">Q. 未成年でも利用できますか？</summary>
+                <p class="c-questionText">A.はい。未成年の方は親権者同意書が必要となります。</p>
+              </details>
+            </div>
+          </details>
+          <button class="c-mainButton" type="button">
+            <span class="c-buttonText">詳しく見る</span>
+            <img class="c-buttonArrow" src="" alt="">
+          </button>
+        </div>
+      </div>
     </section>
     <section class="p-news">
+      <div class="p-newsContents">
+        <div class="p-newsContents__top">
+          <div class="c-decoration"></div>
+          <h1 class="c-mainTitle">NEWS</h1>
+          <h2 class="c-mainHeading">LINOAからのお知らせ</h2>
+        </div>
+        <div class="p-newsContents__bottom">
+          <ul class="p-newsList">
+            <li class="p-newsList__item">
+              <time class="c-newsText">2026年5月1日</time>
+              <a href="#">
+                <p class="c-newsText">【重要】WEB予約システム メンテナンス実施</p>
+              </a>
+            </li>
+            <li class="p-newsList__item">
+              <time class="c-newsText">2026年4月10日</time>
+              <a href="#">
+                <p class="c-newsText">【お知らせ】GW期間の営業時間変更</p>
+              </a>
+            </li>
+            <li class="p-newsList__item">
+              <time class="c-newsText">2026年3月30日</time>
+              <a href="#">
+                <p class="c-newsText">【キャンペーン】新生活キャンペーン開始</p>
+              </a>
+            </li>
+            <li class="p-newsList__item">
+              <time class="c-newsText">2026年3月2日</time>
+              <a href="#">
+                <p class="c-newsText">【採用情報】カウンセラー／施術者 募集</p>
+              </a>
+            </li>
+            <li class="p-newsList__item">
+              <time class="c-newsText">2026年2月13日</time>
+              <a href="#">
+                <p class="c-newsText">【キャンペーン】冬のキャンペーン終了</p>
+              </a>
+            </li>
+          </ul>
+          <button class="c-mainButton">
+            <span class="c-buttonText">NEWS一覧</span>
+            <img class="c-buttonArrow">
+          </button>
+        </div>
+      </div>
     </section>
-    <section class="p-counseling">
+    <section class="p-flow">
+      <div class="p-flowContents">
+        <div class="p-flowContents__top">
+          <div class="c-decoration"></div>
+          <h1 class="c-mainTitle">FLOW</h1>
+          <h2 class="c-mainHeading">カウンセリングの流れ</h2>
+        </div>
+        <div class="p-flowContents__bottom">
+          <ul class="p-flowList">
+            <li class="p-flowList__item">
+              <img class="c-flowImage">
+              <p class="c-flowHeading">カウンセリング予約</p>
+              <p class="c-flowText">WEBからカウンセリングの予約をします。</p>
+            </li>
+            <li class="p-flowList__item">
+              <img class="c-flowImage">
+              <p class="c-flowHeading">ご来店・カウンセリングシート記入</p>
+              <p class="c-flowText">ご予約時間に来店し、カウンセリングシートにご記入いただきます。</>
+            </li>
+            <li class="p-flowList__item">
+              <img class="c-flowImage">
+              <p class="c-flowHeading">施術内容・料金のご説明／肌状態の確認</p>
+              <p class="c-flowText">カウンセラーが施術内容・料金をご説明し、肌状態を確認します。テスト照射をご希望の方はお申し付けください。内容をご確認いただき、後日ご検討いただくことも可能です。</p>
+            </li>
+            <li class="p-flowList__item">
+              <img class="c-flowImage">
+              <p class="c-flowHeading">施術日を予約</p>
+              <p class="c-flowText">ご都合に合わせて施術日を予約していただきます。</>
+            </li>
+          <ul>
+          <button class="c-mainButton">
+            <span class="c-buttonText">詳しく見る</span>
+            <img class="c-buttonArrow">
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="p-column">
+      <div class="p-columnContents">
+        <div class="p-columnContents__top">
+          <div class="c-decoration"></div>
+          <h1 class="c-mainTitle">COLUMN</h1>
+          <h2 class="c-mainHeading">コラム</h2>
+          <p class="c-mainText">美容施術が初めての方必見！今すぐ読みたい美容コラム</p>
+        </div>
+        <div class="p-columnContents__bottom">
+          <ul class="p-columnList">
+            <li class="p-columnList__item">
+              <img class="c-columnImage">
+              <p class="c-columnText">美容脱毛と医療脱毛の違い</p>
+            </li>
+            <li class="p-columnList__item">
+              <img class="c-columnImage">
+              <p class="c-columnText">脱毛前日にやること：剃毛・保湿・日焼け対策</p>
+            </li>
+            <li class="p-columnList__item">
+              <img class="c-columnImage">
+              <p class="c-columnText">保湿で変わる？脱毛期間中のスキンケア基本</p>
+            </li>
+          </ul>
+          <button class="c-mainButton">
+            <span class="c-buttonText">詳しく見る</span>
+            <img class="c-buttonArrow">
+          </button>
     </section>
   </main>
   <footer class="l-footer">
