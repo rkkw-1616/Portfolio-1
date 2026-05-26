@@ -56,9 +56,30 @@
 }
 
 .p-navList__item {
+  position: relative;
   padding-right: 20px;
   font-size: 14px;
   font-weight: bold;
+}
+
+.p-dropdown summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.p-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.p-dropdownList {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px;
+}
+
+.p-dropdown[open] .p-dropdownList {
+  display: block;
 }
 
 .p-topContents__button {
@@ -126,6 +147,36 @@
   font-size: 18px;
   font-weight: normal;
   color: #990000;
+}
+
+.p-about {
+  margin: 70px 100px;
+}
+
+.c-mainHeading {
+  padding: 10px 0 0 40px;
+}
+
+.c-mainText {
+  display: contents;
+}
+
+.c-orengeText {
+  display: contents;
+  color: #990000;
+}
+
+.c-mainButton {
+  background-color: #990000;
+  width: 250px;
+  height: 45px;
+  border: none;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.c-buttonText {
+  color: #fff;
 }
 
 .l-footer {
