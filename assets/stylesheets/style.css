@@ -201,6 +201,11 @@
   padding: 100px;
 }
 
+.p-priceList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .p-question {
   padding: 100px;
 }
@@ -213,12 +218,43 @@
   padding: 100px;
 }
 
+.p-flowList {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+}
+
+.p-flowList__item {
+  padding-right: 20px;
+}
+
+.c-flowImage {
+  width: 251px;
+  height: 119px;
+  object-fit: cover;
+  border-radius: 20px 20px 0 0;
+}
+
+.c-flowHeading {
+  width: 251px;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #8B5E50;
+  font-weight: bold;
+}
+
+.c-flowText {
+  width: 251px;
+}
+
 .p-column {
   padding: 100px;
 }
 
 .p-columnList {
   display: flex;
+  padding-top: 80px;
 }
 
 .p-columnList__item {
