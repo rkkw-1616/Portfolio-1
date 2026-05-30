@@ -193,8 +193,20 @@
   padding: 100px;
 }
 
+.c-facialImage {
+  width: 651px;
+  height: 370px;
+  object-fit: contain;
+}
+
 .p-body {
   padding: 100px;
+}
+
+.c-bodyImage {
+  width: 651px;
+  height: 370px;
+  object-fit: contain;
 }
 
 .p-price {
