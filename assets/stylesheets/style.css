@@ -1594,6 +1594,32 @@
 }
 
 /* ========================================
+  Banner
+======================================== */
+.c-reservationButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 113px;
+  width: 443px;
+  border-radius: 20px;
+}
+
+.c-reservationButton:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.c-bannerIcon {
+  width: 30px;
+  margin-right: 15px;
+}
+
+/* ========================================
   Footer
 ======================================== */
 .l-footer {
