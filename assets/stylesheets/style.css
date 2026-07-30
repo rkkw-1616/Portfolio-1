@@ -1597,26 +1597,82 @@
   Banner
 ======================================== */
 .c-reservationButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
+  background-color: var(--color-bg-sub);
+  border: 1px solid var(--color-primary);
   box-sizing: border-box;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  height: 113px;
-  width: 443px;
-  border-radius: 20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 800px) {
+  .c-reservationButton {
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+  transform: translateX(-50%);
+    flex-direction: row;
+    width: calc(100% - 20px);
+    max-width: 440px;
+    height: 70px;
+    border-radius: 9999px;
+    padding: 0 20px;
+    margin: 0;
+  }
 }
 
 .c-reservationButton:hover {
-  opacity: 0.8;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0.9;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .c-bannerIcon {
-  width: 30px;
-  margin-right: 15px;
+  width: 25px;
+  height: auto;
+  margin-bottom: 8px;
+  }
+
+@media screen and (max-width: 800px) {
+  .c-bannerIcon {
+    width: 20px;
+    margin-bottom: 0;
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+}
+
+.c-bannerArrow {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
+  transform: rotate(45deg);
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+  .c-bannerArrow {
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    flex-shrink: 0;
+  }
 }
 
 /* ========================================
