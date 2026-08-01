@@ -18,20 +18,10 @@
   --fs-lg: 18px;
   --fs-xl: 20px;
 
-    /* ========================================
+  /* ========================================
     Width
   ======================================== */
   --width-price: 280px;
-
-  /* ========================================
-    Radius
-  ======================================== */
-  --radius-xs: 10px;
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 50px;
-  --radius-xl: 100px;
-  --radius-pill: 9999px;
 }
 
 /* ========================================
@@ -149,7 +139,7 @@
     min-height: 36px;
     margin-right: 10px;
     padding: 0 28px 0 16px;
-    border-radius: var(--radius-pill);
+    border-radius: 9999px;
   }
 }
 
@@ -869,7 +859,7 @@
   min-height: 46px;
   margin: 50px auto 0;
   padding: 10px 50px;
-  border-radius: var(--radius-lg);
+  border-radius: 50px;
   text-align: center;
   text-decoration: none;
 }
@@ -988,7 +978,7 @@
   height: 200px;
   padding: 25px;
   border: 1px solid var(--color-primary);
-  border-radius: var(--radius-md);
+  border-radius: 20px;
   background-color: var(--color-white);
 }
 
@@ -1095,7 +1085,7 @@
 
 .p-accordion__item {
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
+  border-radius: 12px;
   background-color: var(--color-white);
   overflow: hidden;
 }
@@ -1166,7 +1156,7 @@
 .c-image--slide {
   width: 310px;
   height: 228px;
-  border-radius: var(--radius-md);
+  border-radius: 20px;
   margin-right: 20px;
   object-fit: cover;
 }
@@ -1568,7 +1558,7 @@
 .c-image--card {
   width: 194px;
   height: 120px;
-  border-radius: var(--radius-xs);
+  border-radius: 10px;
   object-fit: cover;
 }
 
