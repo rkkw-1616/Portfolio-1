@@ -25,6 +25,13 @@
 }
 
 /* ========================================
+Base
+======================================== */
+body.is-fixed {
+  overflow: hidden;
+}
+
+/* ========================================
   Header
 ======================================== */
 .l-header {
@@ -46,6 +53,8 @@
 .p-header {
   display: flex;
   justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 999px) {
@@ -505,14 +514,6 @@
   }
 }
 
-@media screen and (max-width: 999px) {
-  .p-nav--sp .c-dropdownText {
-    padding: 16px 16px 16px 54px;
-    background-color: #fafafa;
-    border-radius: 0;
-  }
-}
-
 .c-downArrow {
   position: relative;
   display: inline-block;
@@ -771,52 +772,9 @@
   max-width: 1000px;
 }
 
-.p-aboutVisual {
-  position: relative;
-}
-
-.p-about {
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  padding-top: 0;
-  z-index: 1;
-}
-
-@media screen and (max-width: 999px) {
-  .p-about {
-    position: static;
-    margin-top: 30px;
-  }
-}
-
-.p-about__item {
-  border: 1px solid var(--color-primary);
-  background-color: var(--color-white);
-  height: 45px;
-  width: 300px;
-  border-radius: 20px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (max-width: 999px) {
-  .p-about__item {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto 20px;
-  }
-}
-
 .c-text {
   font-weight: normal;
   line-height: 1.8;
-}
-
-.c-text--bold {
-  font-weight: bold;
 }
 
 .c-text--color-text {
@@ -1198,7 +1156,7 @@
   News
 ======================================== */
 .p-section--news {
-  padding: 100px 100px 200px;
+  padding: 100px 0 200px;
 }
 
 @media screen and (max-width: 999px) {
@@ -1483,13 +1441,7 @@
   object-fit: cover;
 }
 
-.p-section--column .c-image--wide {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-section--column .c-image--wide {
     height: auto;
   }
@@ -1498,13 +1450,13 @@
 .p-section--column .p-section__inner {
   position: relative;
   max-width: 1090px;
-  margin: -120px auto 0 0;
-  padding: 100px 0 100px 250px;
+  margin: -120px 50px 0 0;
+  padding: 100px;
   background-color: var(--color-white);
   border-radius: 0 100px 100px 0;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-section--column .p-section__inner {
     padding: 60px 20px;
     margin-top: -40px;
@@ -1518,7 +1470,7 @@
   padding: 0 0 70px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-section--column .p-section__head {
     padding-bottom: 40px;
   }
@@ -1530,15 +1482,15 @@
 
 .p-column {
   display: flex;
+  justify-content: center;
   gap: 80px;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-column {
-    display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -1548,7 +1500,7 @@
   width: 194px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-column__item {
     display: flex;
     width: 100%;
@@ -1562,7 +1514,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .c-image--card {
     height: 110px;
   }
@@ -1572,7 +1524,7 @@
   margin-top: 10px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .p-column__item .c-text {
     width: 50%;
     padding-left: 10px;
@@ -1631,7 +1583,7 @@
 
 @media screen and (min-width: 801px) {
   .c-reservationButton:hover {
-    transform: translateY(-4px);;
+    transform: translateY(-4px);
   }
 }
 
@@ -1788,10 +1740,4 @@
 
 .u-right0 {
   right: 0;
-}
-
-@media screen and (min-width: 1000px) {
-  .u-display-sp {
-    display: none;
-  }
 }
