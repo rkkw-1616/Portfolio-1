@@ -1451,7 +1451,7 @@ body.is-fixed {
   position: relative;
   max-width: 1090px;
   margin: -120px 50px 0 0;
-  padding: 100px;
+  padding: 60px;
   background-color: var(--color-white);
   border-radius: 0 100px 100px 0;
 }
@@ -1524,9 +1524,8 @@ body.is-fixed {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-column__item .c-text {
-    width: 50%;
     padding-left: 10px;
   }
 }
