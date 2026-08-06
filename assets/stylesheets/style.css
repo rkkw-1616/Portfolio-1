@@ -1441,7 +1441,7 @@ body.is-fixed {
   object-fit: cover;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-section--column .c-image--wide {
     height: auto;
   }
@@ -1456,7 +1456,7 @@ body.is-fixed {
   border-radius: 0 100px 100px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-section--column .p-section__inner {
     padding: 60px 20px;
     margin-top: -40px;
@@ -1470,7 +1470,7 @@ body.is-fixed {
   padding: 0 0 70px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-section--column .p-section__head {
     padding-bottom: 40px;
   }
@@ -1489,7 +1489,7 @@ body.is-fixed {
   list-style: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-column {
     flex-wrap: wrap;
     gap: 30px;
@@ -1500,7 +1500,7 @@ body.is-fixed {
   width: 194px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .p-column__item {
     display: flex;
     width: 100%;
@@ -1514,7 +1514,7 @@ body.is-fixed {
   object-fit: cover;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .c-image--card {
     height: 110px;
   }
@@ -1559,7 +1559,7 @@ body.is-fixed {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .c-reservationButton {
     bottom: 20px;
     left: 50%;
@@ -1580,7 +1580,7 @@ body.is-fixed {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1000px) {
   .c-reservationButton:hover {
     transform: translateY(-4px);
   }
@@ -1592,7 +1592,7 @@ body.is-fixed {
   margin-bottom: 8px;
   }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .c-bannerIcon {
     width: 25px;
     margin-bottom: 0;
@@ -1627,7 +1627,7 @@ body.is-fixed {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 999px) {
   .c-bannerArrow {
     width: 10px;
     height: 10px;
