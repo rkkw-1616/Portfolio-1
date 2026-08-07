@@ -1627,7 +1627,7 @@ body.is-fixed {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 800px) {
   .c-bannerArrow {
     width: 10px;
     height: 10px;
