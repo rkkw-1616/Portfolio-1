@@ -1463,12 +1463,6 @@ body.is-fixed {
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 567px) {
-  .p-section--column .p-section__body {
-    padding-left: 40px;
-  }
-}
-
 .p-column {
   display: flex;
   justify-content: center;
